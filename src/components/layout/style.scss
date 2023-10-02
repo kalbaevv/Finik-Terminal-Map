@@ -1,0 +1,24 @@
+@import 'mixin.scss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #eee;
+  color: #212121;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+
+  @media screen and (min-width: 720px) {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

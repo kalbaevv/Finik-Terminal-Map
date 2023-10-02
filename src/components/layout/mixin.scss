@@ -1,0 +1,24 @@
+$transition: all 0.35s ease;
+$gray: #6c6e79;
+$danger: #f63939;
+
+@mixin minWidthMedia($min-width) {
+  @media screen and (min-width: $min-width) {
+    @content;
+  }
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}

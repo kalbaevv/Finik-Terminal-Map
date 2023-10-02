@@ -1,0 +1,24 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - npm install --legacy-peer-deps
+    runtime-versions:
+      nodejs: 18
+  build:
+    commands:
+      - npm run prepare-env
+      - npm run build
+      - npm test
+  post_build:
+    commands:
+      - npm run deploy
+cache:
+  paths:
+    - node_modules/**/*
+reports:
+  jest_reports:
+    files:
+      - jest-report.xml
+    file-format: JUNITXML
+    base-directory: coverage
