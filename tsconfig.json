@@ -12,7 +12,14 @@
     "types": ["jest", "node"],
     "declaration": true,
     "skipLibCheck": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+
+    "baseUrl": "./src",
+    "paths": {
+      "@assets/*": ["assets/*"],
+      "@components/*": ["components/*"],
+      "@images/*": ["images/*"]
+    }
   },
   "exclude": ["node_modules"],
   "include": ["src", "src/declaration.d.ts"]
