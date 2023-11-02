@@ -14,12 +14,7 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
 
-    "baseUrl": "./src",
-    "paths": {
-      "@assets/*": ["assets/*"],
-      "@components/*": ["components/*"],
-      "@images/*": ["images/*"]
-    }
+    "baseUrl": "./src"
   },
   "exclude": ["node_modules"],
   "include": ["src", "src/declaration.d.ts"]
