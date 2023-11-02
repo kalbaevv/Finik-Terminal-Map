@@ -14,6 +14,7 @@ export default function Layout({ children }) {
   const { title } = site?.siteMetadata || '';
   const theme = {
     colors: {
+      text_default_color: '#fff',
       dark: '#212121',
       gray: '#6C6E79',
       text_silver: '#9EA5B1',
@@ -79,13 +80,9 @@ export default function Layout({ children }) {
         <meta charSet="utf-8" />
       </Helmet>
       <StyleReset />
-      <header>
-
-      </header>
+      <header></header>
       <main id="main">{children}</main>
-      <footer>
-
-      </footer>
+      <footer></footer>
     </ThemeProvider>
   );
 }
