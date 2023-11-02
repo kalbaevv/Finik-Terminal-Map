@@ -56,7 +56,7 @@ export default function Layout({ children }) {
         display: '20px',
         heading2: '24px',
         heading: '36px',
-        mainTitle: '56px',
+        mainTitle: '64px',
       },
       height: {
         body: '20px',
@@ -65,6 +65,12 @@ export default function Layout({ children }) {
         heading2: '28px',
         heading: '40px',
         mainTitle: '60px',
+      },
+      textWeight: {
+        regular: 400,
+        medium: 500,
+        semiBold: 600,
+        bold: 700,
       },
     },
   };
